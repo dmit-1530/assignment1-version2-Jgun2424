@@ -2,6 +2,7 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-400: #78909C;
     --blue-grey-800: #37474F;
     --blue-grey-900: #263238;
     --dark-background: #111;
@@ -47,6 +48,11 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+}
+
+.logo span {
     font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
 }
@@ -334,6 +340,139 @@ footer {
     
 }
 
+.gallery-title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    
+}
+
+.gallery-items {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+}
+
+.gallery-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.gallery-item img {
+    flex: 1;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.gallery-item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-item-content h3 {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.gallery-item-content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.gallery-item-image {
+    width: 49.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gallery-quote {
+    background-color: #fff;
+    padding: 4rem 2rem;
+}
+
+.gallery-quote-content {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+.gallery-culture {
+    background-color: var(--blue-grey-400);
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+.gallery-culture-content h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.gallery-culture-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.gallery-culture-item {
+    text-align: left;
+    max-width: calc(50% - 1rem);
+}
+
+.gallery-feature {
+    background-color: var(--blue-grey-800);
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+
+.gallery-features {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.gallery-feature-header h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.gallery-features-content {
+    text-align: left;
+}
+
+
+
+.gallery-features-sub-image img {
+    width: 100%;
+}
+
+
+.gallery-features-image {
+    height: 100%;
+    object-fit: cover;
+    width: calc(50% - 1rem);
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 390px) {
     .information-item {
         flex-direction: column !important;
@@ -358,5 +497,24 @@ footer {
         width: 100%;
         max-width: 100%;
     }
-}
 
+    .gallery-item {
+        flex-direction: column;
+    }
+
+    .gallery-item-image {
+        width: 100%;
+    }
+
+    .gallery-item-content {
+        width: 100%;
+    }
+
+    .gallery-item:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .gallery-culture-item {
+        max-width: 100%;
+    }
+}
